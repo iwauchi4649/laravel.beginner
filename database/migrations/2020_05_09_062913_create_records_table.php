@@ -22,7 +22,6 @@ class CreateRecordsTable extends Migration
             $table->integer("member4")->nullable();
             $table->timestamps();
             $table->softDeletes();	
-            
         });
     }
 
