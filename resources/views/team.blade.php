@@ -4,14 +4,8 @@
 @section('content')
 <div class="container-fluid">
   <div class="row">
-    <div class="col-2">
-    <h4>参加グループリスト</h4>
-    <ul class="list-group" style="max-width: 400px;">
-      <li class="list-group-item">リスト1</li>
-      <li class="list-group-item">リスト2</li>
-      <li class="list-group-item">リスト3</li>
-    </ul>
-    </div>
+    <!-- サイドバー -->
+    @include('layouts.partials.sidebar')
     <div class="col-10">
       <h4>戦績データ</h4>
         <table class="table">
@@ -44,6 +38,6 @@
 </div>
 @endsection
 
-    <!-- @foreach ($teams as $team)
+    {{-- @foreach ($teams as $team)
       <p>{{$team->name}}</p>
-    @endforeach -->
+    @endforeach --}}
