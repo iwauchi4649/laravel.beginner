@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>麻雀成績記録</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -32,6 +32,17 @@
 
             .position-ref {
                 position: relative;
+            }
+
+            .top-left {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+
+            .logo{
+                max-width: 250px;
+                max-height: 50px;
             }
 
             .top-right {
@@ -65,6 +76,11 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+            <div class="top-left links">
+                <a href="{{ url('/home') }}">
+                    <img src="logo-row.svg" alt="logo" class="logo">
+                </a>
+            </div>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
