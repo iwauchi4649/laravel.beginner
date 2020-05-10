@@ -4,7 +4,7 @@
     @foreach ($teams as $team)
     <a href="./{{$team->id}}" class="link">
     <li class="list-group-item">{{$team->name}}</li>
-    <a>
+    </a>
       @endforeach
   </ul>
 </div>
