@@ -14,12 +14,12 @@ class TeamsTableSeeder extends Seeder
     {
         DB::table('teams')->insert([
             'user_id' => 1,
-            'name' => "Testers4",
+            'name' => "mcdcrew.jp",
             'count' => 4,
-            'member1' => "A",
-            'member2' => "B",
-            'member3' => "C",
-            'member4' => "D",
+            'member1' => "イワウチ",
+            'member2' => "タカハシ",
+            'member3' => "ハタイ",
+            'member4' => "オクノ",
             'uma14' => 20,
             'uma23' => 10,
             'tobi' => 10,
