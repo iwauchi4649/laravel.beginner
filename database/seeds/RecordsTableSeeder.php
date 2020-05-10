@@ -13,7 +13,7 @@ class RecordsTableSeeder extends Seeder
     public function run()
     {
         DB::table('records')->insert([
-            'teamid' => 1,
+            'team_id' => 1,
             'member1' => 70000,
             'member2' => 10000,
             'member3' => 10000,
@@ -21,7 +21,7 @@ class RecordsTableSeeder extends Seeder
         ]);
 
         DB::table('records')->insert([
-            'teamid' => 1,
+            'team_id' => 1,
             'member1' => 40000,
             'member2' => 30000,
             'member3' => 20000,
@@ -29,7 +29,21 @@ class RecordsTableSeeder extends Seeder
         ]);
 
         DB::table('records')->insert([
-            'teamid' => 2,
+            'team_id' => 2,
+            'member1' => 85000,
+            'member2' => 10000,
+            'member3' => 10000,
+        ]);
+
+        DB::table('records')->insert([
+            'team_id' => 3,
+            'member1' => 85000,
+            'member2' => 10000,
+            'member3' => 10000,
+        ]);
+
+        DB::table('records')->insert([
+            'team_id' => 3,
             'member1' => 85000,
             'member2' => 10000,
             'member3' => 10000,

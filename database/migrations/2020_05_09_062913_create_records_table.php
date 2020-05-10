@@ -15,13 +15,13 @@ class CreateRecordsTable extends Migration
     {
         Schema::create('records', function (Blueprint $table) {
             $table->id()->autoIncrement();
-            $table->bigInteger("teamid");
+            $table->bigInteger("team_id");
             $table->integer("member1");
             $table->integer("member2");
             $table->integer("member3");
             $table->integer("member4")->nullable();
             $table->timestamps();
-            $table->softDeletes();	
+            $table->softDeletes();
         });
     }
 

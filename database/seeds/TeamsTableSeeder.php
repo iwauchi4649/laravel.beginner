@@ -13,7 +13,7 @@ class TeamsTableSeeder extends Seeder
     public function run()
     {
         DB::table('teams')->insert([
-            'userid' => 1,
+            'user_id' => 1,
             'name' => "Testers4",
             'count' => 4,
             'member1' => "A",
@@ -29,8 +29,23 @@ class TeamsTableSeeder extends Seeder
         ]);
 
         DB::table('teams')->insert([
-            'userid' => 1,
+            'user_id' => 1,
             'name' => "Testers3",
+            'count' => 3,
+            'member1' => "A",
+            'member2' => "B",
+            'member3' => "C",
+            'uma14' => 10,
+            'uma23' => 0,
+            'tobi' => 10,
+            'points' => 35000,
+            'returns' => 40000,
+            'rate' => 5,
+        ]);
+
+        DB::table('teams')->insert([
+            'user_id' => 2,
+            'name' => "Testers23",
             'count' => 3,
             'member1' => "A",
             'member2' => "B",

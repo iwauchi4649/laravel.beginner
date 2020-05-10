@@ -36,4 +36,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // ユーザは複数のチームを保持できる
+    public function teams()
+    {
+        return $this->hasMany('App\Team');
+    }
 }
