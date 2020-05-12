@@ -6,7 +6,7 @@
     <!-- サイドバー -->
     @include('layouts.partials.sidebar')
     <div class="col-10">
-        <h4>{{$teamname}}の戦績データ</h4>
+        <h4 class="team_h4">{{$teamname}}の戦績データ</h4>
         <table class="table table-bordered">
           <thead>
           <tr>
@@ -17,7 +17,7 @@
           </tr>
           @foreach ($members as $member)
           <tr>
-            <td>{{$member["name"]}}</td>
+            <td class="first_td">{{$member["name"]}}</td>
             <td>{{$member["count"]}}</td>								
             <td>{{$member["pointsum"]}}</td>					
             <td>{{$member["rank"]}}</td>
