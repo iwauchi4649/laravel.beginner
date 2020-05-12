@@ -1,0 +1,10 @@
+.top-left {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.logo{
+  max-width: 250px;
+  max-height: 50px;
+}
