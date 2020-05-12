@@ -7,7 +7,7 @@
     @include('layouts.partials.sidebar')
     <div class="col-10">
         <h4>{{$teamname}}の戦績データ</h4>
-        <table class="table">
+        <table class="table table-bordered">
           <thead>
           <tr>
           <th>名前</th>
